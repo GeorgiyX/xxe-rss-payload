@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Pipedream - Latest topics</title>
+    <link>https://pipedream.com/community/latest</link>
+    <description>Latest topics</description>
+    
+      <lastBuildDate>Tue, 01 Mar 2022 16:37:51 +0000</lastBuildDate>
+      <atom:link href="https://pipedream.com/community/latest.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Workflows: getting unknown error when making a request to HubSpot API. &quot;at null.search (file:///tmp/ee/c_N2fM6el/index.mjs:292:9)&quot;</title>
+          <dc:creator><![CDATA[lharney]]></dc:creator>
+          <category>Dev</category>
+          <description><![CDATA[
+            <p>Hi,</p>
+<p>I have created a script locally on my computer. The script works but when I copy it over to workflow I get the following error:</p>
+<pre><code class="lang-auto">at null.search (file:///tmp/ee/c_N2fM6el/index.mjs:292:9)
+    at Object.run (file:///tmp/ee/c_N2fM6el/index.mjs:405:37)
+    at process.processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at global.executeComponent (/var/task/launch_worker.js:154:22)
+    at MessagePort.messageHandler (/var/task/launch_worker.js:620:35)
+</code></pre>
+<p>Other functions in the workflow work except for one.</p>
+<p>Any idea what this error means?</p>
+<p>Thanks,<br>
+Lar</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://pipedream.com/community/t/workflows-getting-unknown-error-when-making-a-request-to-hubspot-api-at-null-search-file-tmp-ee-c-n2fm6el-index-mjs9/2003">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/workflows-getting-unknown-error-when-making-a-request-to-hubspot-api-at-null-search-file-tmp-ee-c-n2fm6el-index-mjs9/2003</link>
+          <pubDate>Tue, 01 Mar 2022 16:37:51 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-2003</guid>
+          <source url="https://pipedream.com/community/t/workflows-getting-unknown-error-when-making-a-request-to-hubspot-api-at-null-search-file-tmp-ee-c-n2fm6el-index-mjs9/2003.rss">Workflows: getting unknown error when making a request to HubSpot API. &quot;at null.search (file:///tmp/ee/c_N2fM6el/index.mjs:292:9)&quot;</source>
+        </item>
+        <item>
+          <title>AWS Integration not working | ConfigError: Missing region in config</title>
+          <dc:creator><![CDATA[naitik]]></dc:creator>
+          <category>Dev</category>
+          <description><![CDATA[
+            <blockquote>
+<p>ConfigError: Missing region in config</p>
+<p>at Request.VALIDATE_REGION (/tmp/tmp-9SoH1XUJJoiJw/639dba8c44135c31d5c2499287ef7d5f23b90a4821964bb52009e6947ecefe8b/node_modules/aws-sdk/lib/event_listeners.js:94:47)</p>
+<p>at Request.callListeners (/tmp/tmp-9SoH1XUJJoiJw/639dba8c44135c31d5c2499287ef7d5f23b90a4821964bb52009e6947ecefe8b/node_modules/aws-sdk/lib/sequential_executor.js:106:20)</p>
+<p>at callNextListener (/tmp/tmp-9SoH1XUJJoiJw/639dba8c44135c31d5c2499287ef7d5f23b90a4821964bb52009e6947ecefe8b/node_modules/aws-sdk/lib/sequential_executor.js:96:12)</p>
+<p>at /tmp/tmp-9SoH1XUJJoiJw/639dba8c44135c31d5c2499287ef7d5f23b90a4821964bb52009e6947ecefe8b/node_modules/aws-sdk/lib/event_listeners.js:86:9</p>
+<p>at finish (/tmp/tmp-9SoH1XUJJoiJw/639dba8c44135c31d5c2499287ef7d5f23b90a4821964bb52009e6947ecefe8b/node_modules/aws-sdk/lib/config.js:396:7)</p>
+<p>at getStaticCredentials (/tmp/tmp-9SoH1XUJJoiJw/639dba8c44135c31d5c2499287ef7d5f23b90a4821964bb52009e6947ecefe8b/node_modules/aws-sdk/lib/config.js:423:7)</p>
+<p>at Config.getCredentials (/tmp/tmp-9SoH1XUJJoiJw/639dba8c44135c31d5c2499287ef7d5f23b90a4821964bb52009e6947ecefe8b/node_modules/aws-sdk/lib/config.js:430:9)</p>
+<p>at Request.VALIDATE_CREDENTIALS (/tmp/tmp-9SoH1XUJJoiJw/639dba8c44135c31d5c2499287ef7d5f23b90a4821964bb52009e6947ecefe8b/node_modules/aws-sdk/lib/event_listeners.js:81:26)</p>
+<p>at Request.callListeners (/tmp/tmp-9SoH1XUJJoiJw/639dba8c44135c31d5c2499287ef7d5f23b90a4821964bb52009e6947ecefe8b/node_modules/aws-sdk/lib/sequential_executor.js:102:18)</p>
+<p>at Request.emit (/tmp/tmp-9SoH1XUJJoiJw/639dba8c44135c31d5c2499287ef7d5f23b90a4821964bb52009e6947ecefe8b/node_modules/aws-sdk/lib/sequential_executor.js:78:10)</p>
+</blockquote>
+<p>I am getting this config error,</p>
+<p>I am simply testing this <strong>trigger</strong> <a href="https://pipedream.com/apps/aws/triggers/new-records-returned-by-cloudwatch-logs-insights-query">https://pipedream.com/apps/aws/triggers/new-records-returned-by-cloudwatch-logs-insights-query</a></p>
+<p>it has blocked me, don’t know how to resolve</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://pipedream.com/community/t/aws-integration-not-working-configerror-missing-region-in-config/2002">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/aws-integration-not-working-configerror-missing-region-in-config/2002</link>
+          <pubDate>Tue, 01 Mar 2022 10:22:16 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-2002</guid>
+          <source url="https://pipedream.com/community/t/aws-integration-not-working-configerror-missing-region-in-config/2002.rss">AWS Integration not working | ConfigError: Missing region in config</source>
+        </item>
+        <item>
+          <title>Sources showing 15 Seconds Minimum Interval for Timer</title>
+          <dc:creator><![CDATA[rzey]]></dc:creator>
+          <category>General Discussion</category>
+          <description><![CDATA[
+            <p>Dear Sir/Madam,</p>
+<p>I hope you are well. I was running the sources for my workflows at 6 seconds interval but yesterday i saw it changed automatically to 15 seconds interval. I am trying to set it back to 6 seconds but the minimum interval shown is 15 seconds. Can you kindly look into it.</p>
+<p>Thanks for your time and Co-operation.</p>
+<p>Kind Regards,<br>
+Raza</p>
+            <p><small>4 posts - 2 participants</small></p>
+            <p><a href="https://pipedream.com/community/t/sources-showing-15-seconds-minimum-interval-for-timer/1996">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/sources-showing-15-seconds-minimum-interval-for-timer/1996</link>
+          <pubDate>Mon, 28 Feb 2022 14:24:56 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-1996</guid>
+          <source url="https://pipedream.com/community/t/sources-showing-15-seconds-minimum-interval-for-timer/1996.rss">Sources showing 15 Seconds Minimum Interval for Timer</source>
+        </item>
+        <item>
+          <title>How do you make a discord webhook tell you where a sheets edit came from?</title>
+          <dc:creator><![CDATA[sampetersenfilming]]></dc:creator>
+          <category>Help</category>
+          <description><![CDATA[
+            <p>Hi there!</p>
+<p>Im making a simple workflow that will send a message in discord when a sheet is edited (So that when a new response to a form is submitted, we can see where it came from and where in the sheet it is). My question is - How do I get the discord message to say where this edit came from? All I have now is it triggering a simple message when the sheet is edited, but I need to know where that edit is from.</p>
+<p>Thanks,</p>
+<p>Sam P</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://pipedream.com/community/t/how-do-you-make-a-discord-webhook-tell-you-where-a-sheets-edit-came-from/1991">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/how-do-you-make-a-discord-webhook-tell-you-where-a-sheets-edit-came-from/1991</link>
+          <pubDate>Sat, 26 Feb 2022 06:34:41 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-1991</guid>
+          <source url="https://pipedream.com/community/t/how-do-you-make-a-discord-webhook-tell-you-where-a-sheets-edit-came-from/1991.rss">How do you make a discord webhook tell you where a sheets edit came from?</source>
+        </item>
+        <item>
+          <title>How to connect Google Classroom to Notion?</title>
+          <dc:creator><![CDATA[ImMX]]></dc:creator>
+          <category>Help</category>
+          <description><![CDATA[
+            <p>I have been trying for a little while to, first, get the Google Classroom to output a course list, and second get it to output changes in stream for different courses in different Notion databases. I have been unsuccessful and can not figure out why I can not get a simple console.log of the contents of Google Classroom.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://pipedream.com/community/t/how-to-connect-google-classroom-to-notion/1989">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/how-to-connect-google-classroom-to-notion/1989</link>
+          <pubDate>Sat, 26 Feb 2022 02:45:17 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-1989</guid>
+          <source url="https://pipedream.com/community/t/how-to-connect-google-classroom-to-notion/1989.rss">How to connect Google Classroom to Notion?</source>
+        </item>
+        <item>
+          <title>Combining Custom HTTP Request Step + Proxy</title>
+          <dc:creator><![CDATA[seagalli]]></dc:creator>
+          <category>Help</category>
+          <description><![CDATA[
+            <p>We have a basic test pipeline working HTTP Trigger + Request Step + Custom Response Output but we will need to feed all of our requests through a Proxy service to get a static IP. Is there a way to easily combine the Custom Request Step with the Proxy step in a straightforward way?</p>
+<p>The benefit of the Custom Request step is that it makes setting up new endpoints/API requests very simple and our proxy information will not change.</p>
+<p>Thanks in advance.</p>
+            <p><small>5 posts - 2 participants</small></p>
+            <p><a href="https://pipedream.com/community/t/combining-custom-http-request-step-proxy/1986">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/combining-custom-http-request-step-proxy/1986</link>
+          <pubDate>Fri, 25 Feb 2022 14:49:03 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-1986</guid>
+          <source url="https://pipedream.com/community/t/combining-custom-http-request-step-proxy/1986.rss">Combining Custom HTTP Request Step + Proxy</source>
+        </item>
+        <item>
+          <title>transform an attachment of a trigger declared through a url</title>
+          <dc:creator><![CDATA[cecin]]></dc:creator>
+          <category>Help</category>
+          <description><![CDATA[
+            <p>Hello guys<br>
+I would like to know the best way to transform an attachment of a trigger declared through a url<br>
+I need to be able to access this url on another platform that does not accept authentication<br>
+or I can send the url content in base64 format to this platform<br>
+I tried to get the contents of the url but it also gave an error<br>
+</p><div class="lightbox-wrapper"><a class="lightbox" href="https://pipedream.com/community/uploads/default/original/2X/c/c5c46aaf6631f7f469434604c006bc2ba4af411f.png" data-download-href="https://pipedream.com/community/uploads/default/c5c46aaf6631f7f469434604c006bc2ba4af411f" title="Captura de Tela 2022-02-23 às 16.19.26"><img src="https://pipedream.com/community/uploads/default/optimized/2X/c/c5c46aaf6631f7f469434604c006bc2ba4af411f_2_690x199.png" alt="Captura de Tela 2022-02-23 às 16.19.26" data-base62-sha1="sdwSIIsBsopW9fLnLjjXqMJOtH1" width="690" height="199" srcset="https://pipedream.com/community/uploads/default/optimized/2X/c/c5c46aaf6631f7f469434604c006bc2ba4af411f_2_690x199.png, https://pipedream.com/community/uploads/default/optimized/2X/c/c5c46aaf6631f7f469434604c006bc2ba4af411f_2_1035x298.png 1.5x, https://pipedream.com/community/uploads/default/optimized/2X/c/c5c46aaf6631f7f469434604c006bc2ba4af411f_2_1380x398.png 2x" data-small-upload="https://pipedream.com/community/uploads/default/optimized/2X/c/c5c46aaf6631f7f469434604c006bc2ba4af411f_2_10x10.png"></a></div><br>
+<div class="lightbox-wrapper"><a class="lightbox" href="https://pipedream.com/community/uploads/default/original/2X/1/1ccbaf53dba4c775192cdc388c1227d771271eba.png" data-download-href="https://pipedream.com/community/uploads/default/1ccbaf53dba4c775192cdc388c1227d771271eba" title="Captura de Tela 2022-02-23 às 17.59.34"><img src="https://pipedream.com/community/uploads/default/optimized/2X/1/1ccbaf53dba4c775192cdc388c1227d771271eba_2_690x207.png" alt="Captura de Tela 2022-02-23 às 17.59.34" data-base62-sha1="46JLf8bqLpH2JitLdwwnLgnpXJ0" width="690" height="207" srcset="https://pipedream.com/community/uploads/default/optimized/2X/1/1ccbaf53dba4c775192cdc388c1227d771271eba_2_690x207.png, https://pipedream.com/community/uploads/default/original/2X/1/1ccbaf53dba4c775192cdc388c1227d771271eba.png 1.5x, https://pipedream.com/community/uploads/default/original/2X/1/1ccbaf53dba4c775192cdc388c1227d771271eba.png 2x" data-small-upload="https://pipedream.com/community/uploads/default/optimized/2X/1/1ccbaf53dba4c775192cdc388c1227d771271eba_2_10x10.png"></a></div><br>
+<div class="lightbox-wrapper"><a class="lightbox" href="https://pipedream.com/community/uploads/default/original/2X/4/4983b58127116ff735c51d094682d471b767b782.png" data-download-href="https://pipedream.com/community/uploads/default/4983b58127116ff735c51d094682d471b767b782" title="Captura de Tela 2022-02-23 às 17.59.45"><img src="https://pipedream.com/community/uploads/default/optimized/2X/4/4983b58127116ff735c51d094682d471b767b782_2_690x48.png" alt="Captura de Tela 2022-02-23 às 17.59.45" data-base62-sha1="aul2vYT3XRT1FwRlwn26X3U6Uoy" width="690" height="48" srcset="https://pipedream.com/community/uploads/default/optimized/2X/4/4983b58127116ff735c51d094682d471b767b782_2_690x48.png, https://pipedream.com/community/uploads/default/optimized/2X/4/4983b58127116ff735c51d094682d471b767b782_2_1035x72.png 1.5x, https://pipedream.com/community/uploads/default/optimized/2X/4/4983b58127116ff735c51d094682d471b767b782_2_1380x96.png 2x" data-small-upload="https://pipedream.com/community/uploads/default/optimized/2X/4/4983b58127116ff735c51d094682d471b767b782_2_10x10.png"></a></div><p></p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://pipedream.com/community/t/transform-an-attachment-of-a-trigger-declared-through-a-url/1984">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/transform-an-attachment-of-a-trigger-declared-through-a-url/1984</link>
+          <pubDate>Fri, 25 Feb 2022 14:35:33 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-1984</guid>
+          <source url="https://pipedream.com/community/t/transform-an-attachment-of-a-trigger-declared-through-a-url/1984.rss">transform an attachment of a trigger declared through a url</source>
+        </item>
+        <item>
+          <title>I can&#39;t edit the frequency my workflow is executed</title>
+          <dc:creator><![CDATA[carlos-estevez]]></dc:creator>
+          <category>General Discussion</category>
+          <description><![CDATA[
+            <p>Hello, I’ve created and tested my first workflow, but now I’m not able to change the frequency it’s executed, my changes are never store so I’m not able to deploy it again with the new frequency.</p>
+<p>Thanks for your help!</p>
+            <p><small>6 posts - 2 participants</small></p>
+            <p><a href="https://pipedream.com/community/t/i-cant-edit-the-frequency-my-workflow-is-executed/1982">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/i-cant-edit-the-frequency-my-workflow-is-executed/1982</link>
+          <pubDate>Fri, 25 Feb 2022 10:33:22 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-1982</guid>
+          <source url="https://pipedream.com/community/t/i-cant-edit-the-frequency-my-workflow-is-executed/1982.rss">I can&#39;t edit the frequency my workflow is executed</source>
+        </item>
+        <item>
+          <title>Upsert Row on Google Sheets throw err: Unable to parse range:</title>
+          <dc:creator><![CDATA[welcomenemalstore]]></dc:creator>
+          <category>Help</category>
+          <description><![CDATA[
+            <p>This is my Flow :<br>
+Trigger &amp; API call work ok .<br>
+But Upsert Row on Google Sheets throw this err:</p>
+<p>Unable to parse range: nhap!<span class="hashtag">#ERROR</span>!:<span class="hashtag">#ERROR</span>!</p>
+<p>at Gaxios._request (/tmp/ee/c_1qfre14/node_modules/.pnpm/gaxios@4.3.2/node_modules/gaxios/build/src/gaxios.js:129:23) at process.processTicksAndRejections (internal/process/task_queues.js:95:5) at OAuth2Client.requestAsync (/tmp/ee/c_1qfre14/node_modules/.pnpm/google-auth-library@7.14.0/node_modules/google-auth-library/build/src/auth/oauth2client.js:368:18) at Object.updateSpreadsheet (file:///tmp/ee/c_1qfre14/user/google_sheets/google_sheets.app.mjs:311:15) at Object.updateRow (file:///tmp/ee/c_1qfre14/user/google_sheets/google_sheets.app.mjs:469:14) at Function.all (null:null:null) at Object.run (file:///tmp/ee/c_1qfre14/user/google_sheets/actions/upsert-row/upsert-row.mjs:181:9) at global.executeComponent (/var/task/launch_worker.js:154:22) at MessagePort.messageHandler (/var/task/launch_worker.js:620:35)</p>
+            <p><small>5 posts - 2 participants</small></p>
+            <p><a href="https://pipedream.com/community/t/upsert-row-on-google-sheets-throw-err-unable-to-parse-range/1979">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/upsert-row-on-google-sheets-throw-err-unable-to-parse-range/1979</link>
+          <pubDate>Fri, 25 Feb 2022 06:17:23 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-1979</guid>
+          <source url="https://pipedream.com/community/t/upsert-row-on-google-sheets-throw-err-unable-to-parse-range/1979.rss">Upsert Row on Google Sheets throw err: Unable to parse range:</source>
+        </item>
+        <item>
+          <title>Does Pipedream work for a puppeteer nodejs app?</title>
+          <dc:creator><![CDATA[kwachter]]></dc:creator>
+          <category>Help</category>
+          <description><![CDATA[
+            <p>I have a node js script that uses a variety of npm packages, the main one being puppeteer. This script navigates through a website (logs in to user account and books an appointment based on parameters I give it from a mongodb database). I want to automate this nodejs script to run at a certain time every day. Is Pipedream able to do this? My nodejs script has several functions and hundreds of lines of code.</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://pipedream.com/community/t/does-pipedream-work-for-a-puppeteer-nodejs-app/1975">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/does-pipedream-work-for-a-puppeteer-nodejs-app/1975</link>
+          <pubDate>Thu, 24 Feb 2022 16:34:44 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-1975</guid>
+          <source url="https://pipedream.com/community/t/does-pipedream-work-for-a-puppeteer-nodejs-app/1975.rss">Does Pipedream work for a puppeteer nodejs app?</source>
+        </item>
+        <item>
+          <title>Workflows: is there a way to store a local variable that the workflow can access the next time it runs</title>
+          <dc:creator><![CDATA[lharney]]></dc:creator>
+          <category>Dev</category>
+          <description><![CDATA[
+            <p>Hi,</p>
+<p>Is there a way to store a local variable that the workflow can access the next time it runs?</p>
+<p>The use case is that I make a request to an API with the url parameter updated_at to receive records that were created/update after the given date. Each workflow would have to store an updated_at variable for the next the workflow runs.</p>
+<p>Thanks.</p>
+            <p><small>4 posts - 2 participants</small></p>
+            <p><a href="https://pipedream.com/community/t/workflows-is-there-a-way-to-store-a-local-variable-that-the-workflow-can-access-the-next-time-it-runs/1973">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/workflows-is-there-a-way-to-store-a-local-variable-that-the-workflow-can-access-the-next-time-it-runs/1973</link>
+          <pubDate>Wed, 23 Feb 2022 16:16:25 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-1973</guid>
+          <source url="https://pipedream.com/community/t/workflows-is-there-a-way-to-store-a-local-variable-that-the-workflow-can-access-the-next-time-it-runs/1973.rss">Workflows: is there a way to store a local variable that the workflow can access the next time it runs</source>
+        </item>
+        <item>
+          <title>Problems connecting Google Sheets</title>
+          <dc:creator><![CDATA[victortbroedel]]></dc:creator>
+          <category>Help</category>
+          <description><![CDATA[
+            <p>Hi everyone, newbie here.</p>
+<p>Just arrived pipedream and got a mistake at first trying to test a component of my workflow.<br>
+Behind a printscreen of the error<br>
+<img src="https://pipedream.com/community/uploads/default/original/2X/8/8a1efaafab59239ac52d5036481727a8b6c8b1f0.png" alt="image" data-base62-sha1="jHSglrKcMBTZ1xEYSsMJwCcDZjq" width="323" height="120"><br>
+It looks that doesn’t connect the Google sheets account, I receive the Webhoo from a form, but it doesn’t add a row in Sheets.</p>
+<p>Can someone help me?</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://pipedream.com/community/t/problems-connecting-google-sheets/1971">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/problems-connecting-google-sheets/1971</link>
+          <pubDate>Wed, 23 Feb 2022 13:14:10 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-1971</guid>
+          <source url="https://pipedream.com/community/t/problems-connecting-google-sheets/1971.rss">Problems connecting Google Sheets</source>
+        </item>
+        <item>
+          <title>Zoom Meeting -&gt; Telegram</title>
+          <dc:creator><![CDATA[quasimonto]]></dc:creator>
+          <category>Help</category>
+          <description><![CDATA[
+            <p>Hi there,</p>
+<p>i am trying to get a simple workflow going.<br>
+I want to send a message to a telegram channel once i open my zoom meeting.</p>
+<p>i added my zoom account and in the account scope i can see pipedream has these rights<br>
+chat_channel:readchat_channel:writechat_contact:readchat_message:readchat_message:writemeeting:readmeeting:writepac:readpac:writephone:readphone:writerecording:readrecording:writeuser:readuser:writeuser_profilewebinar:readwebinar:write</p>
+<p>I then created the source and set the trigger to meeting.started. Testing the trigger does not work because it seems that no event is recieved or no event sent althou i tried several times to open a meeting.</p>
+<p>I see an error in the log file but cant really do anything with it.</p>
+<pre><code class="lang-auto">TypeError: Cannot destructure property 'object' of 'payload' as it is undefined.
+at Object.run (file:///var/task/user/sources/meeting-started/meeting-started.mjs:22:13)
+at /var/task/index.js:123:72
+at async captureObservations (/var/task/node_modules/@lambda-v2/component-runtime/src/captureObservations.js:28:5)
+at async Runtime.exports.main [as handler] (/var/task/index.js:61:20)
+</code></pre>
+<p>Do i have to have a payed Zoom account for that to work? What else do it miss here?</p>
+<p>Thanks for any help</p>
+            <p><small>4 posts - 2 participants</small></p>
+            <p><a href="https://pipedream.com/community/t/zoom-meeting-telegram/1966">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/zoom-meeting-telegram/1966</link>
+          <pubDate>Tue, 22 Feb 2022 20:05:51 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-1966</guid>
+          <source url="https://pipedream.com/community/t/zoom-meeting-telegram/1966.rss">Zoom Meeting -&gt; Telegram</source>
+        </item>
+        <item>
+          <title>Source: Reset emitted events or manually trigger a workflow that is triggered by a source</title>
+          <dc:creator><![CDATA[lharney]]></dc:creator>
+          <category>Dev</category>
+          <description><![CDATA[
+            <p>Hey,</p>
+<p>I’ve created a source that triggers a workflow and it works well.</p>
+<p>Is it possible to reset the emitted events from the source or to manually trigger the workflows?<br>
+The reason I ask is that when I upload the source, the source makes a request to the external API before the workflow is created. This means that any events emitted by the source, before the workflow is created, does not trigger the workflow.</p>
+<p>Thanks,<br>
+Lar</p>
+            <p><small>4 posts - 2 participants</small></p>
+            <p><a href="https://pipedream.com/community/t/source-reset-emitted-events-or-manually-trigger-a-workflow-that-is-triggered-by-a-source/1964">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/source-reset-emitted-events-or-manually-trigger-a-workflow-that-is-triggered-by-a-source/1964</link>
+          <pubDate>Tue, 22 Feb 2022 12:04:25 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-1964</guid>
+          <source url="https://pipedream.com/community/t/source-reset-emitted-events-or-manually-trigger-a-workflow-that-is-triggered-by-a-source/1964.rss">Source: Reset emitted events or manually trigger a workflow that is triggered by a source</source>
+        </item>
+        <item>
+          <title>Can not get opencv imported in either python or node.js</title>
+          <dc:creator><![CDATA[rohaninejadm]]></dc:creator>
+          <category>Bugs</category>
+          <description><![CDATA[
+            <p>Both <code>import opencv from "opencv"</code> in node.js, as well as <code>import cv2</code> in python fail (example attachment)<br>
+</p><div class="lightbox-wrapper"><a class="lightbox" href="https://pipedream.com/community/uploads/default/original/2X/1/1662a0c189e2f74fc8ff8268b1f552deee4cd4c5.png" data-download-href="https://pipedream.com/community/uploads/default/1662a0c189e2f74fc8ff8268b1f552deee4cd4c5" title="Screen Shot 2022-02-22 at 12.01.08 AM"><img src="https://pipedream.com/community/uploads/default/optimized/2X/1/1662a0c189e2f74fc8ff8268b1f552deee4cd4c5_2_690x161.png" alt="Screen Shot 2022-02-22 at 12.01.08 AM" data-base62-sha1="3c1Os6YRHU2gNq2NKFNHBJxII9n" width="690" height="161" srcset="https://pipedream.com/community/uploads/default/optimized/2X/1/1662a0c189e2f74fc8ff8268b1f552deee4cd4c5_2_690x161.png, https://pipedream.com/community/uploads/default/optimized/2X/1/1662a0c189e2f74fc8ff8268b1f552deee4cd4c5_2_1035x241.png 1.5x, https://pipedream.com/community/uploads/default/optimized/2X/1/1662a0c189e2f74fc8ff8268b1f552deee4cd4c5_2_1380x322.png 2x" data-small-upload="https://pipedream.com/community/uploads/default/optimized/2X/1/1662a0c189e2f74fc8ff8268b1f552deee4cd4c5_2_10x10.png"></a></div><p></p>
+<p>Any ideas on how to fix?</p>
+            <p><small>6 posts - 3 participants</small></p>
+            <p><a href="https://pipedream.com/community/t/can-not-get-opencv-imported-in-either-python-or-node-js/1961">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/can-not-get-opencv-imported-in-either-python-or-node-js/1961</link>
+          <pubDate>Tue, 22 Feb 2022 08:01:42 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-1961</guid>
+          <source url="https://pipedream.com/community/t/can-not-get-opencv-imported-in-either-python-or-node-js/1961.rss">Can not get opencv imported in either python or node.js</source>
+        </item>
+        <item>
+          <title>Strava, Google Sheets Error</title>
+          <dc:creator><![CDATA[johnreeve68]]></dc:creator>
+          <category>Help</category>
+          <description><![CDATA[
+            <p>I’m using a workflow to pull Strava data to google sheets - had a couple of iterations and support from here but am getting an error that is frustrating:</p>
+<p>TypeError: Cannot read property ‘elapsed_time’ of undefined<br>
+at eval (eval at _pd_deep_evaluate (/var/task/params_evaluator.js:57:18), :1:33)<br>
+at _pd_deep_evaluate (/var/task/params_evaluator.js:57:18)<br>
+at MessagePort. (/var/task/params_evaluator.js:11:9)<br>
+at MessagePort.[nodejs.internal.kHybridDispatch] (internal/event_target.js:399:24)<br>
+at MessagePort.exports.emitMessage (internal/per_context/messageport.js:18:26)</p>
+<p>I do not have elapsed time in the fields I have defined to pull - this seems odd and possibly points to somewhere else - any thoughts</p>
+<p>Workflow is open to support<br>
+“<a href="https://pipedream.com/@johnreeve68/strava-pull-p_ezCJ7Dq/edit%E2%80%9D">https://pipedream.com/@johnreeve68/strava-pull-p_ezCJ7Dq/edit”</a></p>
+<p>Thanks</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://pipedream.com/community/t/strava-google-sheets-error/1957">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/strava-google-sheets-error/1957</link>
+          <pubDate>Mon, 21 Feb 2022 23:44:10 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-1957</guid>
+          <source url="https://pipedream.com/community/t/strava-google-sheets-error/1957.rss">Strava, Google Sheets Error</source>
+        </item>
+        <item>
+          <title>Does the &#39;exclude replies&#39; option for a Twitter &#39;User Tweets&#39; trigger not work, or am I missing something?</title>
+          <dc:creator><![CDATA[philw]]></dc:creator>
+          <category>Help</category>
+          <description><![CDATA[
+            <p>Hi everyone,</p>
+<p>Pipedream looks great and I’m having a lot of fun with it!</p>
+<p>I’m a bit unsure about the ‘exclude replies’ option/flag for the ‘User Tweets’ trigger.</p>
+<p>I have a workflow with replies excluded from the trigger, but it still seems to be being triggered by replies?</p>
+<p></p><div class="lightbox-wrapper"><a class="lightbox" href="https://pipedream.com/community/uploads/default/original/2X/7/77ec4214cf05a5963e038faf132f257ffa81da71.png" data-download-href="https://pipedream.com/community/uploads/default/77ec4214cf05a5963e038faf132f257ffa81da71" title="SCR-20220221-v63"><img src="https://pipedream.com/community/uploads/default/optimized/2X/7/77ec4214cf05a5963e038faf132f257ffa81da71_2_690x331.png" alt="SCR-20220221-v63" data-base62-sha1="h6SZYOIuwYo8BoiWeq0my6Gx6cp" width="690" height="331" srcset="https://pipedream.com/community/uploads/default/optimized/2X/7/77ec4214cf05a5963e038faf132f257ffa81da71_2_690x331.png, https://pipedream.com/community/uploads/default/optimized/2X/7/77ec4214cf05a5963e038faf132f257ffa81da71_2_1035x496.png 1.5x, https://pipedream.com/community/uploads/default/optimized/2X/7/77ec4214cf05a5963e038faf132f257ffa81da71_2_1380x662.png 2x" data-small-upload="https://pipedream.com/community/uploads/default/optimized/2X/7/77ec4214cf05a5963e038faf132f257ffa81da71_2_10x10.png"></a></div><p></p>
+<p>It’d be great if someone from Pipedream could help me out? The URL of the workflow is <a href="https://pipedream.com/@philw/build-site-when-i-tweet-retweet-p_V9CaK57/inspect/25QXUkjmOYIvxWNSui6E4PsVxJJ">https://pipedream.com/@philw/build-site-when-i-tweet-retweet-p_V9CaK57/inspect/25QXUkjmOYIvxWNSui6E4PsVxJJ</a> if anyone from Pipedream would like to take a look <img src="https://pipedream.com/community/images/emoji/apple/slight_smile.png?v=10" title=":slight_smile:" class="emoji" alt=":slight_smile:"></p>
+            <p><small>5 posts - 2 participants</small></p>
+            <p><a href="https://pipedream.com/community/t/does-the-exclude-replies-option-for-a-twitter-user-tweets-trigger-not-work-or-am-i-missing-something/1956">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/does-the-exclude-replies-option-for-a-twitter-user-tweets-trigger-not-work-or-am-i-missing-something/1956</link>
+          <pubDate>Mon, 21 Feb 2022 22:33:32 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-1956</guid>
+          <source url="https://pipedream.com/community/t/does-the-exclude-replies-option-for-a-twitter-user-tweets-trigger-not-work-or-am-i-missing-something/1956.rss">Does the &#39;exclude replies&#39; option for a Twitter &#39;User Tweets&#39; trigger not work, or am I missing something?</source>
+        </item>
+        <item>
+          <title>Error in accessing google sheet for integration</title>
+          <dc:creator><![CDATA[stockmaniacs]]></dc:creator>
+          <category>Dev</category>
+          <description><![CDATA[
+            <p>Hi there I am trying to integrate google sheet to telegram. But I am getting an error while setting up the source sheet. Can you plz help? The error screenshot is given below:</p>
+<p></p><div class="lightbox-wrapper"><a class="lightbox" href="https://pipedream.com/community/uploads/default/original/2X/6/6a5612dc7cb7d1ee69fc7595667b184afc29000b.png" data-download-href="https://pipedream.com/community/uploads/default/6a5612dc7cb7d1ee69fc7595667b184afc29000b" title="Pipedream-Error-1"><img src="https://pipedream.com/community/uploads/default/optimized/2X/6/6a5612dc7cb7d1ee69fc7595667b184afc29000b_2_690x387.png" alt="Pipedream-Error-1" data-base62-sha1="faH1tKQ1jDL2inPYAz8UdQTyqqT" width="690" height="387" srcset="https://pipedream.com/community/uploads/default/optimized/2X/6/6a5612dc7cb7d1ee69fc7595667b184afc29000b_2_690x387.png, https://pipedream.com/community/uploads/default/optimized/2X/6/6a5612dc7cb7d1ee69fc7595667b184afc29000b_2_1035x580.png 1.5x, https://pipedream.com/community/uploads/default/original/2X/6/6a5612dc7cb7d1ee69fc7595667b184afc29000b.png 2x" data-small-upload="https://pipedream.com/community/uploads/default/optimized/2X/6/6a5612dc7cb7d1ee69fc7595667b184afc29000b_2_10x10.png"></a></div><p></p>
+<p>Regards</p>
+<p>Indrajit</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://pipedream.com/community/t/error-in-accessing-google-sheet-for-integration/1953">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/error-in-accessing-google-sheet-for-integration/1953</link>
+          <pubDate>Mon, 21 Feb 2022 12:58:44 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-1953</guid>
+          <source url="https://pipedream.com/community/t/error-in-accessing-google-sheet-for-integration/1953.rss">Error in accessing google sheet for integration</source>
+        </item>
+        <item>
+          <title>Pipedream can&#39;t find Stripe test events when setting up Stripe to Mailerlite Workflow</title>
+          <dc:creator><![CDATA[nathantrevivian]]></dc:creator>
+          <category>Help</category>
+          <description><![CDATA[
+            <p>Hello,</p>
+<p>I’m trying to setup pipedream to link a stripe webhook to a mailerlite subscription.<br>
+I’m setting up the workflow, have connected stripe and selected the event I care about, and I’m trying to trigger an event from stripe so that I can move onto the next step.</p>
+<p>I’ve installed the stripe cli using homebrew and have run:</p>
+<pre><code class="lang-auto">stripe listen --forward-connect-to https://REDACTED.m.pipedream.net
+</code></pre>
+<p>where <code>https://REDACTED.m.pipedream.net</code> is the webhook endpoint.</p>
+<p>Then I’m using the stripe cli to trigger an event:</p>
+<pre><code class="lang-auto">stripe trigger charge.succeeded
+</code></pre>
+<p>I can see this in the logs:</p>
+<pre><code class="lang-auto">2022-02-21 11:04:28   --&gt; charge.succeeded [evt_3KVZguJkl2z7Ianr18WAzM3R]
+</code></pre>
+<p>But when I click the Test button on the workflow setup it just says it couldn’t find any events:<br>
+</p><div class="lightbox-wrapper"><a class="lightbox" href="https://pipedream.com/community/uploads/default/original/2X/2/2bc6063f819075149ee789f10bb85c7e037f734e.jpeg" data-download-href="https://pipedream.com/community/uploads/default/2bc6063f819075149ee789f10bb85c7e037f734e" title="Screenshot 2022-02-21 at 11.25.21"><img src="https://pipedream.com/community/uploads/default/optimized/2X/2/2bc6063f819075149ee789f10bb85c7e037f734e_2_690x238.jpeg" alt="Screenshot 2022-02-21 at 11.25.21" data-base62-sha1="6feNnZppSd6ryAP6lZtEPFGNtSe" width="690" height="238" srcset="https://pipedream.com/community/uploads/default/optimized/2X/2/2bc6063f819075149ee789f10bb85c7e037f734e_2_690x238.jpeg, https://pipedream.com/community/uploads/default/optimized/2X/2/2bc6063f819075149ee789f10bb85c7e037f734e_2_1035x357.jpeg 1.5x, https://pipedream.com/community/uploads/default/optimized/2X/2/2bc6063f819075149ee789f10bb85c7e037f734e_2_1380x476.jpeg 2x" data-small-upload="https://pipedream.com/community/uploads/default/optimized/2X/2/2bc6063f819075149ee789f10bb85c7e037f734e_2_10x10.png"></a></div><p></p>
+<p>I sort of need this step to work so I can configure the mailerlite bit - I’m assuming it’ll use the event data to pull out a list of fields I can use to configured mailerlite call (ie: the email address).</p>
+<p>What am I doing wrong? How can I trigger a test event from stripe so that this pipedream workflow setup will continue?</p>
+<p>Thanks for any help!</p>
+            <p><small>3 posts - 1 participant</small></p>
+            <p><a href="https://pipedream.com/community/t/pipedream-cant-find-stripe-test-events-when-setting-up-stripe-to-mailerlite-workflow/1951">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/pipedream-cant-find-stripe-test-events-when-setting-up-stripe-to-mailerlite-workflow/1951</link>
+          <pubDate>Mon, 21 Feb 2022 11:26:28 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-1951</guid>
+          <source url="https://pipedream.com/community/t/pipedream-cant-find-stripe-test-events-when-setting-up-stripe-to-mailerlite-workflow/1951.rss">Pipedream can&#39;t find Stripe test events when setting up Stripe to Mailerlite Workflow</source>
+        </item>
+        <item>
+          <title>Remove from Spotify Playlist</title>
+          <dc:creator><![CDATA[marco1967]]></dc:creator>
+          <category>Help</category>
+          <description><![CDATA[
+            <p>I need some help with the following:</p>
+<aside class="onebox allowlistedgeneric" data-onebox-src="https://pipedream.com/apps/google-sheets/integrations/spotify/remove-items-from-a-playlist-with-spotify-api-on-new-row-added-instant-from-google-sheets-api-int_7vsMvd">
+  <header class="source">
+      <img src="https://pipedream.com/apps/google-sheets/integrations/spotify/remove-items-from-a-playlist-with-spotify-api-on-new-row-added-instant-from-google-sheets-api-int_7vsMvd/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAMAAABlApw1AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACYVBMVEX///800os00os00os00os00os00os00os00os00os00os00os00os00os00os00os00os00os00os00otG1pV04LCI5bua6cWs7dC+8drP9OTi+O7z/Pj5/vzq+vPa9+rK8+G68Neq7M6K5bx54bNf3KQ204w81JBJ15dX2p9l3adz4K+A47eO5r6b6caf6sg20ow4041m3ajY9un+///////y/Pi98NmE5LlN15mp7M6379bE8t3S9eXf+O3t+/X6/vyC47jB8dz1/frh+O6o7M1x365L15jx/PdC1ZOY6MRK15ir7M/2/fqk68tB1ZLs+/R34bE10ouR58DA8dv8/v1U2Z3C8dzm+fBV2Z7m+vFo3amM5b37/v3W9uj3/fph3KTw/PZT2Z3k+fA+1JCu7dFt36tA1ZKe6chM15mV6MLZ9+lR2Zzv+/at7dCE5Lin7M278Nju+/Vk3aZQ2Ju279W/8dpu36w3041R2Ju88Nnr+/Ry4K5h3KXl+fC07tR14LBd26OM5r184rSv7dLS9ebR9eWd6cdt36xI1pZp3qmL5b3M9OLO9OPQ9eRn3ai479d+4rWH5LqQ5sBv361W2p+j68s/1JHT9ebc9+ve+OzX9uj5/vvb9+vF8t79//45046v7dFN2Jpq3qqN5r6n683j+e/9/v7J8+B64rPp+vI+1JGZ6MVx4K6F5Lli3KVS2Zxb26Hi+e+D47ix7tI604924bGG5Lp44bJZ2qBP2JpD1ZTV9ueU58Ky7tPL9OE71I/N9OLW9udO2JqP5r+S58FF1pW579d74rOg6sn0/fmK6DrrAAAAE3RSTlMAJXOlv9nzGofWDYT1g1XqAQuwouruwAAAAAFiS0dEAIgFHUgAAAAJcEhZcwAAN10AADddARmARl0AAAAHdElNRQfjBBIAOB/JA0tWAAAF9klEQVR42u2d+18UVRjGZ2/ssrvsLrvrQiSLUgglcjEOkIYgCAFKGGGoCWY3zMSSLliIRUlqXiq6UGSsVmaGkHazG93vf1W7grjL7rwzc2aGc94+8/x65uHzfNkzM2fOvHOOICTIZLZYbWkBTpVms1rMJkFUdkc664hylO6wp4zvdLlZR5Mrd4YzOb/HyzqWEnk9C+L7XKwjKZXLF58/0886j3L5M+P+/wjzRwmu/wbo+s+sXPPnL+sktJo7k52orj/x8s5eTTNY56DX1U5kR3P/SpY7dk92sE6hRo4oAIrxj5jSo+NP1hnUySSYWUdQJ7NgYR1BnSyClXUEdbIKNtYR1MkmcPv8KE9pAusEamUAsJYBwFoGAGsZABIKLgllZd+Qc+PS3HDesuX5WTfdXLCCJ4DColtuXVm8qqS0LEVj+erS2ypIkiqrqm9nDBBNvGbtHTXrauvmU61feExRqL6BiGpDY1MhQ4AUicKJee7MriMSas5q4QmAtMa1b9wkGT+mtrvaOQJoCF5rLcrPlRM/ps138wNAsmfbOu6RHT+mziBNAF0Attwba2rpUhI/qq3beAEgXdGWgu0K80evqvfxAkBWB3bIOnkXqLuJF4CeKor4Ue28nxMAau16ADkAefAh5ADkYewA5BHsAOFe5ABkN3aANsoxBTcAZA12gLpHkQOQPdgBHsMOQPZiB6DqQ3oC9PV07Wt9vHhVyRP7w7r1Id0A+jc92RFnear46W5d+pBOAM8MHEhyPfucHn1IF4DBg6l9Q4e070N6ADwvOmO1t1/zPqQ9QPcLgHO4AfS+yAFAxUugdQkIcJgDgB0S3hHI/DJ7gCNS3qMQQCV7AOnpWvAnOIYAYCUE8AoCgEJo9u44AoDACcCejQFgD2A/iQGgALDvwgBQVgn4Fc9NMAAInAL8r2IAeA3wv44BoBTwhzAAjAL+NzAAvAn4szAAvAX438YAMAb492EA6AD8azEABIB3+Z0oAIBb8TIUAIPi/ndQAADTQ++iABgX929FAfCeuL8PBQAwHD2NHWALCgCgCzWjAFgn7t+OAgAo63ofBQAwyX4KBQAwxz6BAiAi7l+OAeAM4D+LAaAd8KN4IvsA8LfK8DMH+BDwf4QBIAT418vwMwc4B/gVl7OzAJgA/CjmRj8G/Iq/6mAAUH5e3H5IcRYGANsAexUGgOOAXXm9CgOATwD7UQQAvVDhk/Lq18UHuAC4P1WeZfEBoBdM9QgAJpcC7ovsASRvRCWAmUyxB5CqFQiCJVvKi1W0L3iahq35kLeGIovmAHWfQc5LYPHoKA8ApPayuDH4OeTMpfk+V4eyy9NfiPl680Cj8oGQPgCEfPlVSttkDmw7qDCGfgAk7+vkyuMVV2phU185PwCEhFsTL4lj34xLWRppouhYft/duTvU9G1LYPK7gqkjI+elDcOcAcwpIvfAcar8HH3BcQU5QE8ZTRJ+ACoK6PJzA6B4VpozgObvkQNM08TgCOAHyjOYF4AI3T2MH4AZ+vxcAPyoIj8PAD9RjUL5AahRt8gQc4D6n1Xl1xrgl6FB+dljOqt2zTOtAQLHRhTEb6tWGV9zgJpA4Mxh2fl/vaQ6v9YAPbHmkPSXwzFVzqi6/OgDMFvuc3m/9BPkzlINljjTHmDD3BG/nQPnQCM5v6tdHEwngOtln+1/iL1NrZuo1iq99gDh+MP+HGjt2pzQXNGf99eFMe3Saw+QXLdaNDTw9+jMP40Xp6eGN2px1uoL8K/2CRcXQHHhLW8AEewA5ADN3+MJQKNlUNkB0K71xQ2ANuMDA8AAMAAMAAPAADAADAADwAAwAAwAA+D/CsCTDADWMgBYywBgLfwA6DfWRL+1KfrNZS2sI6iTBf8Gy+i3uEa/yTj+bd7tbtYp6OW2RwGEDNYx6OWK5RecXtY5aOV1XgUQPKyD0MojzMnFOgmdXNfyCz4/6yw08vvmAYRMhAT+TCFOPnS9yOUTEuVBdS3yeoQkOV1o7mjuDKeQSnYHinFRusMuiMpktlht3D5lptmsFrMpMfF/XO8SNBa37b4AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTktMDQtMThUMDA6NTY6MzErMDI6MDA3d1w4AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE5LTA0LTE4VDAwOjU2OjMxKzAyOjAwRirkhAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAZdEVYdFRpdGxlAExvZ28vUGlwZWRyZWFtLVBAMnggboouAAAAV3pUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHic4/IMCHFWKCjKT8vMSeVSAAMjCy5jCxMjE0uTFAMTIESANMNkAyOzVCDL2NTIxMzEHMQHy4BIoEouAOoXEXTyQjWVAAAAAElFTkSuQmCC" class="site-icon" width="" height="">
+
+      <a href="https://pipedream.com/apps/google-sheets/integrations/spotify/remove-items-from-a-playlist-with-spotify-api-on-new-row-added-instant-from-google-sheets-api-int_7vsMvd" target="_blank" rel="noopener">Pipedream</a>
+  </header>
+
+  <article class="onebox-body">
+    <img src="https://pipedream.com/community/uploads/default/original/2X/c/c6567ecfe46426cfe6ee684f215ae499611b4f75.png" class="thumbnail onebox-avatar" width="96" height="96">
+
+<h3><a href="https://pipedream.com/apps/google-sheets/integrations/spotify/remove-items-from-a-playlist-with-spotify-api-on-new-row-added-instant-from-google-sheets-api-int_7vsMvd" target="_blank" rel="noopener">Remove Items from a Playlist with Spotify API on New Row Added (Instant) from...</a></h3>
+
+  <p>Remove Items from a Playlist with Spotify API on New Row Added (Instant) from Google Sheets API. Setup the Google Sheets API trigger to run a workflow which integrates with the Spotify API. Pipedream's integration platform allows you to integrate...</p>
+
+
+  </article>
+
+  <div class="onebox-metadata">
+    
+    
+  </div>
+
+  <div style="clear: both"></div>
+</aside>
+
+<p>I couldn’t figure out what to fill in under “tracks” in the spotify section so it always looks for the new row added?</p>
+<p>In my Google Sheet i have a column with the spotify track ID. How can I make this workflow work, so whenever a new song is added to my sheet it will remove it from the playlist I’ve defined?</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://pipedream.com/community/t/remove-from-spotify-playlist/1949">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/remove-from-spotify-playlist/1949</link>
+          <pubDate>Mon, 21 Feb 2022 10:45:40 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-1949</guid>
+          <source url="https://pipedream.com/community/t/remove-from-spotify-playlist/1949.rss">Remove from Spotify Playlist</source>
+        </item>
+        <item>
+          <title>GET single value from Google Sheet WHERE clause</title>
+          <dc:creator><![CDATA[pascalplus]]></dc:creator>
+          <category>Help</category>
+          <description><![CDATA[
+            <p>I’m trying to <code>get</code> a random <strong>value</strong> from column <strong>B</strong> ‘where’ column <strong>A</strong> ‘contains’ “country=ec”.<br>
+So this is just how I have it in my mind right now. Clueless how to write this in Node, please help?</p>
+<p>Here’s the data in Google Sheets:<br>
+</p><div class="lightbox-wrapper"><a class="lightbox" href="https://pipedream.com/community/uploads/default/original/2X/d/d0871f0692c6863842bbb1189b8f8e97dabf2a32.jpeg" data-download-href="https://pipedream.com/community/uploads/default/d0871f0692c6863842bbb1189b8f8e97dabf2a32" title="CleanShot 2022-02-20 at 14.12.55"><img src="https://pipedream.com/community/uploads/default/optimized/2X/d/d0871f0692c6863842bbb1189b8f8e97dabf2a32_2_690x411.jpeg" alt="CleanShot 2022-02-20 at 14.12.55" data-base62-sha1="tKIOcoAgQMjLP9zUNiilH1GWqZk" width="690" height="411" srcset="https://pipedream.com/community/uploads/default/optimized/2X/d/d0871f0692c6863842bbb1189b8f8e97dabf2a32_2_690x411.jpeg, https://pipedream.com/community/uploads/default/optimized/2X/d/d0871f0692c6863842bbb1189b8f8e97dabf2a32_2_1035x616.jpeg 1.5x, https://pipedream.com/community/uploads/default/optimized/2X/d/d0871f0692c6863842bbb1189b8f8e97dabf2a32_2_1380x822.jpeg 2x" data-small-upload="https://pipedream.com/community/uploads/default/optimized/2X/d/d0871f0692c6863842bbb1189b8f8e97dabf2a32_2_10x10.png"></a></div><p></p>
+<p>The value I am looking for is (screenshot) column B / row 41830.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://pipedream.com/community/t/get-single-value-from-google-sheet-where-clause/1944">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/get-single-value-from-google-sheet-where-clause/1944</link>
+          <pubDate>Sun, 20 Feb 2022 13:14:34 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-1944</guid>
+          <source url="https://pipedream.com/community/t/get-single-value-from-google-sheet-where-clause/1944.rss">GET single value from Google Sheet WHERE clause</source>
+        </item>
+        <item>
+          <title>Manual WP Trigger to Create New Thread in Discord</title>
+          <dc:creator><![CDATA[keelydunn]]></dc:creator>
+          <category>Hire an expert</category>
+          <description><![CDATA[
+            <p>Describe your needs and project in details.</p>
+<p>I’m looking for code/plugin that I can use on every post of a CPT where users can click a button and it triggers a Discord webhook to create a new thread in a specific channel with that CPT’s title and URL. P.S. this is way above my skillset so if I’m describing it poorly, apologies.</p>
+<p>What services or apps do you need to integrate?<br>
+Wordpress + Discord</p>
+<p>What steps should this workflow take?<br>
+Copies CPT title and URL → creates new thread in Discord channel with CPT title as thread title and URL pasted as first post in thread</p>
+<p>What should trigger this workflow?<br>
+User-activated manual trigger (e.g. button)</p>
+<p>Any more details that are important for a Pipedream Expert to know?</p>
+            <p><small>3 posts - 2 participants</small></p>
+            <p><a href="https://pipedream.com/community/t/manual-wp-trigger-to-create-new-thread-in-discord/1943">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/manual-wp-trigger-to-create-new-thread-in-discord/1943</link>
+          <pubDate>Sun, 20 Feb 2022 07:49:38 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-1943</guid>
+          <source url="https://pipedream.com/community/t/manual-wp-trigger-to-create-new-thread-in-discord/1943.rss">Manual WP Trigger to Create New Thread in Discord</source>
+        </item>
+        <item>
+          <title>Strava elements missing</title>
+          <dc:creator><![CDATA[johnreeve68]]></dc:creator>
+          <category>Help</category>
+          <description><![CDATA[
+            <p>I’m using the Strava to google sheets workflow and there are some elements from the Strava workouts that are. Missing from the available elements. Cadence (a big thing for cyclists) is not available, and a few other ones. I know that Strava did something to their API a month or two ago so did that change impact it?<br>
+If not can anyone help define what fields are available?<br>
+Thanks so much</p>
+            <p><small>8 posts - 3 participants</small></p>
+            <p><a href="https://pipedream.com/community/t/strava-elements-missing/1938">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/strava-elements-missing/1938</link>
+          <pubDate>Fri, 18 Feb 2022 02:52:17 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-1938</guid>
+          <source url="https://pipedream.com/community/t/strava-elements-missing/1938.rss">Strava elements missing</source>
+        </item>
+        <item>
+          <title>Pipedream + Yahoo sports api + Adalo</title>
+          <dc:creator><![CDATA[dustinrgood]]></dc:creator>
+          <category>Hire an expert</category>
+          <description><![CDATA[
+            <p>Im look for someone who can help me access yahoo fantasy sports api and hoping to build around that data in Adalo. Any resources would be greatly appreciated.</p>
+<p>More specifically im looking to pull multiple leagues with team names, player names, positions, and points into adalo. Read only is sufficient.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://pipedream.com/community/t/pipedream-yahoo-sports-api-adalo/1935">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/pipedream-yahoo-sports-api-adalo/1935</link>
+          <pubDate>Wed, 16 Feb 2022 19:03:27 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-1935</guid>
+          <source url="https://pipedream.com/community/t/pipedream-yahoo-sports-api-adalo/1935.rss">Pipedream + Yahoo sports api + Adalo</source>
+        </item>
+        <item>
+          <title>Taking existing Google Sheet of 10,000 rows as source with cells of usernames, bulk attaching existing Discord roles to users in Sheets</title>
+          <dc:creator><![CDATA[jm1]]></dc:creator>
+          <category>Dev</category>
+          <description><![CDATA[
+            <p>Taking existing Google Sheet of 10,000 rows as source with cells of usernames, bulk attaching existing Discord roles to users in Sheets</p>
+<p>I’ve used the Sheets as Source and Connects fine<br>
+Used Add_Role from Discord but lots of error messages</p>
+            <p><small>2 posts - 2 participants</small></p>
+            <p><a href="https://pipedream.com/community/t/taking-existing-google-sheet-of-10-000-rows-as-source-with-cells-of-usernames-bulk-attaching-existing-discord-roles-to-users-in-sheets/1934">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/taking-existing-google-sheet-of-10-000-rows-as-source-with-cells-of-usernames-bulk-attaching-existing-discord-roles-to-users-in-sheets/1934</link>
+          <pubDate>Tue, 15 Feb 2022 16:33:26 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-1934</guid>
+          <source url="https://pipedream.com/community/t/taking-existing-google-sheet-of-10-000-rows-as-source-with-cells-of-usernames-bulk-attaching-existing-discord-roles-to-users-in-sheets/1934.rss">Taking existing Google Sheet of 10,000 rows as source with cells of usernames, bulk attaching existing Discord roles to users in Sheets</source>
+        </item>
+        <item>
+          <title>TypeErrorCannot read property &#39;name&#39; of undefined</title>
+          <dc:creator><![CDATA[johnreeve68]]></dc:creator>
+          <category>Help</category>
+          <description><![CDATA[
+            <p>TypeError: Cannot read property ‘name’ of undefined<br>
+at eval (eval at _pd_deep_evaluate (/var/task/params_evaluator.js:57:18), :1:21)<br>
+at _pd_deep_evaluate (/var/task/params_evaluator.js:57:18)<br>
+at _pd_deep_evaluate (/var/task/params_evaluator.js:38:7)<br>
+at MessagePort. (/var/task/params_evaluator.js:11:9)<br>
+at MessagePort.[nodejs.internal.kHybridDispatch] (internal/event_target.js:399:24)<br>
+at MessagePort.exports.emitMessage (internal/per_context/messageport.js:18:26)</p>
+<p>Getting the above error when using to pull data from Strava:</p>
+<p></p><div class="lightbox-wrapper"><a class="lightbox" href="https://pipedream.com/community/uploads/default/original/2X/6/69b0b5ea87921d795c472a6519b799c2cc8707a3.png" data-download-href="https://pipedream.com/community/uploads/default/69b0b5ea87921d795c472a6519b799c2cc8707a3" title="image"><img src="https://pipedream.com/community/uploads/default/optimized/2X/6/69b0b5ea87921d795c472a6519b799c2cc8707a3_2_690x330.png" alt="image" data-base62-sha1="f4YJzQIsGge09cJtq2oO41ddwwr" width="690" height="330" srcset="https://pipedream.com/community/uploads/default/optimized/2X/6/69b0b5ea87921d795c472a6519b799c2cc8707a3_2_690x330.png, https://pipedream.com/community/uploads/default/original/2X/6/69b0b5ea87921d795c472a6519b799c2cc8707a3.png 1.5x, https://pipedream.com/community/uploads/default/original/2X/6/69b0b5ea87921d795c472a6519b799c2cc8707a3.png 2x" data-small-upload="https://pipedream.com/community/uploads/default/optimized/2X/6/69b0b5ea87921d795c472a6519b799c2cc8707a3_2_10x10.png"></a></div><p></p>
+<p>There is data in Strava but get this error sometimes<br>
+Using this:</p><aside class="onebox githubblob" data-onebox-src="https://github.com/PipedreamHQ/pipedream/blob/master/components/google_sheets/actions/add-single-row/add-single-row.mjs">
+  <header class="source">
+
+      <a href="https://github.com/PipedreamHQ/pipedream/blob/master/components/google_sheets/actions/add-single-row/add-single-row.mjs" target="_blank" rel="noopener nofollow ugc">github.com</a>
+  </header>
+
+  <article class="onebox-body">
+    <h4><a href="https://github.com/PipedreamHQ/pipedream/blob/master/components/google_sheets/actions/add-single-row/add-single-row.mjs" target="_blank" rel="noopener nofollow ugc">PipedreamHQ/pipedream/blob/master/components/google_sheets/actions/add-single-row/add-single-row.mjs</a></h4>
+
+
+    <pre><code class="lang-mjs">import googleSheets from "../../google_sheets.app.mjs";
+import { ConfigurationError } from "@pipedream/platform";
+
+export default {
+  key: "google_sheets-add-single-row",
+  name: "Add Single Row",
+  description: "Add a single row of data to Google Sheets",
+  version: "2.0.2",
+  type: "action",
+  props: {
+    googleSheets,
+    drive: {
+      propDefinition: [
+        googleSheets,
+        "watchedDrive",
+      ],
+    },
+    sheetId: {
+      propDefinition: [
+        googleSheets,
+</code></pre>
+
+
+  This file has been truncated. <a href="https://github.com/PipedreamHQ/pipedream/blob/master/components/google_sheets/actions/add-single-row/add-single-row.mjs" target="_blank" rel="noopener nofollow ugc">show original</a>
+
+  </article>
+
+  <div class="onebox-metadata">
+    
+    
+  </div>
+
+  <div style="clear: both"></div>
+</aside>
+
+<p>Anyone have any ideas?</p>
+            <p><small>7 posts - 2 participants</small></p>
+            <p><a href="https://pipedream.com/community/t/typeerrorcannot-read-property-name-of-undefined/1932">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/typeerrorcannot-read-property-name-of-undefined/1932</link>
+          <pubDate>Tue, 15 Feb 2022 01:15:42 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-1932</guid>
+          <source url="https://pipedream.com/community/t/typeerrorcannot-read-property-name-of-undefined/1932.rss">TypeErrorCannot read property &#39;name&#39; of undefined</source>
+        </item>
+        <item>
+          <title>SyntaxError: Invalid or unexpected token, Please I Need Help</title>
+          <dc:creator><![CDATA[runttechworld]]></dc:creator>
+          <category>General Discussion</category>
+          <description><![CDATA[
+            <p>SyntaxError: Invalid or unexpected token<br>
+at _pd_deep_evaluate (/var/task/params_evaluator.js:57:36)<br>
+at MessagePort. (/var/task/params_evaluator.js:11:9)<br>
+at MessagePort.[nodejs.internal.kHybridDispatch] (internal/event_target.js:399:24)<br>
+at MessagePort.exports.emitMessage (internal/per_context/messageport.js:18:26)</p>
+<p>code<br>
+async (params, auths)  =&gt; {<br>
+// <a href="https://core.telegram.org/bots/api#sendmessage" class="inline-onebox" rel="noopener nofollow ugc">Telegram Bot API</a><br>
+const { chat_id, text } = params<br>
+return await require("<span class="mention">@pipedreamhq</span>/platform").axios(this, {<br>
+method: “POST”,<br>
+url: <code>https://api.telegram.org/bot${auths.telegram_bot_api.token}/sendMessage</code>,<br>
+params: {<br>
+chat_id,<br>
+text,<br>
+}<br>
+})<br>
+}</p>
+            <p><small>4 posts - 2 participants</small></p>
+            <p><a href="https://pipedream.com/community/t/syntaxerror-invalid-or-unexpected-token-please-i-need-help/1928">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/syntaxerror-invalid-or-unexpected-token-please-i-need-help/1928</link>
+          <pubDate>Mon, 14 Feb 2022 17:21:20 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-1928</guid>
+          <source url="https://pipedream.com/community/t/syntaxerror-invalid-or-unexpected-token-please-i-need-help/1928.rss">SyntaxError: Invalid or unexpected token, Please I Need Help</source>
+        </item>
+        <item>
+          <title>Reddit Trigger hasn&#39;t picked up recent posts</title>
+          <dc:creator><![CDATA[sharunkumar]]></dc:creator>
+          <category>General Discussion</category>
+          <description><![CDATA[
+            <p>I am using “New Links on a subreddit” trigger on the subreddit r/googleplaydeals, but it doesn’t seem to have picked up any posts since Feb 11.</p>
+<p>Workflow History vs Subreddit New Posts:<br>
+</p><div class="lightbox-wrapper"><a class="lightbox" href="https://pipedream.com/community/uploads/default/original/2X/5/5579b59d59f27606978a6a6ed03ee36a985d2872.jpeg" data-download-href="https://pipedream.com/community/uploads/default/5579b59d59f27606978a6a6ed03ee36a985d2872" title="image"><img src="https://pipedream.com/community/uploads/default/optimized/2X/5/5579b59d59f27606978a6a6ed03ee36a985d2872_2_594x500.jpeg" alt="image" data-base62-sha1="cc9lsXFzGmsDypX8N1EdZiAjhoS" width="594" height="500" srcset="https://pipedream.com/community/uploads/default/optimized/2X/5/5579b59d59f27606978a6a6ed03ee36a985d2872_2_594x500.jpeg, https://pipedream.com/community/uploads/default/optimized/2X/5/5579b59d59f27606978a6a6ed03ee36a985d2872_2_891x750.jpeg 1.5x, https://pipedream.com/community/uploads/default/original/2X/5/5579b59d59f27606978a6a6ed03ee36a985d2872.jpeg 2x" data-small-upload="https://pipedream.com/community/uploads/default/optimized/2X/5/5579b59d59f27606978a6a6ed03ee36a985d2872_2_10x10.png"></a></div><p></p>
+            <p><small>11 posts - 3 participants</small></p>
+            <p><a href="https://pipedream.com/community/t/reddit-trigger-hasnt-picked-up-recent-posts/1926">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/reddit-trigger-hasnt-picked-up-recent-posts/1926</link>
+          <pubDate>Mon, 14 Feb 2022 16:39:54 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-1926</guid>
+          <source url="https://pipedream.com/community/t/reddit-trigger-hasnt-picked-up-recent-posts/1926.rss">Reddit Trigger hasn&#39;t picked up recent posts</source>
+        </item>
+        <item>
+          <title>Global error from workflow</title>
+          <dc:creator><![CDATA[sjn001tvh]]></dc:creator>
+          <category>Pipedream API / CLI</category>
+          <description><![CDATA[
+            <p>I have developed a method by which I track the steps in a workflow.  If an error occurs and the output goes to the global error routine, how can I access the workflow trace log steps within the workflow that caused the error?</p>
+<p>Workflow trigger step<br>
+workflowstep.log workflowCommentsLog<br>
+workflowstep.log workflowCommentsLog<br>
+elc.</p>
+<p>Global Error</p>
+<p>How do I reference the workflowstep.log?</p>
+<p>Plus, while I was testing this, apparently I can’t get the original Error messages to work and now nothing gets sent to my email.  The purpose for this exercise was to locate an error within my workflow that was more detailed that the default error messsge.</p>
+<p>Any ideas?  Or is it even possible to access the workflow after the global error has been generated?</p>
+<p>Thanks,</p>
+<p>Scott.</p>
+            <p><small>1 post - 1 participant</small></p>
+            <p><a href="https://pipedream.com/community/t/global-error-from-workflow/1923">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/global-error-from-workflow/1923</link>
+          <pubDate>Sun, 13 Feb 2022 22:10:36 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-1923</guid>
+          <source url="https://pipedream.com/community/t/global-error-from-workflow/1923.rss">Global error from workflow</source>
+        </item>
+        <item>
+          <title>Jotform - d[0].err is undefined</title>
+          <dc:creator><![CDATA[marshallpowell]]></dc:creator>
+          <category>Help</category>
+          <description><![CDATA[
+            <p>Running into an issue when creating a new source from Jotform, “d[0].err is undefined”. Jotform API key has full access permissions.</p>
+<p></p><div class="lightbox-wrapper"><a class="lightbox" href="https://pipedream.com/community/uploads/default/original/2X/c/cbae9937bed532fac6e685752b0af7d5f698fb20.png" data-download-href="https://pipedream.com/community/uploads/default/cbae9937bed532fac6e685752b0af7d5f698fb20" title="Jotform"><img src="https://pipedream.com/community/uploads/default/optimized/2X/c/cbae9937bed532fac6e685752b0af7d5f698fb20_2_690x320.png" alt="Jotform" data-base62-sha1="t3R07YYIvpUfNLtMH09A7KPp5f2" width="690" height="320" srcset="https://pipedream.com/community/uploads/default/optimized/2X/c/cbae9937bed532fac6e685752b0af7d5f698fb20_2_690x320.png, https://pipedream.com/community/uploads/default/optimized/2X/c/cbae9937bed532fac6e685752b0af7d5f698fb20_2_1035x480.png 1.5x, https://pipedream.com/community/uploads/default/optimized/2X/c/cbae9937bed532fac6e685752b0af7d5f698fb20_2_1380x640.png 2x" data-small-upload="https://pipedream.com/community/uploads/default/optimized/2X/c/cbae9937bed532fac6e685752b0af7d5f698fb20_2_10x10.png"></a></div><p></p>
+            <p><small>4 posts - 4 participants</small></p>
+            <p><a href="https://pipedream.com/community/t/jotform-d-0-err-is-undefined/1922">Read full topic</a></p>
+          ]]></description>
+          <link>https://pipedream.com/community/t/jotform-d-0-err-is-undefined/1922</link>
+          <pubDate>Sun, 13 Feb 2022 20:59:38 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-1922</guid>
+          <source url="https://pipedream.com/community/t/jotform-d-0-err-is-undefined/1922.rss">Jotform - d[0].err is undefined</source>
+        </item>
+  </channel>
+</rss>
