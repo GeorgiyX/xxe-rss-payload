@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE rss [
+    <!ELEMENT rss (channel,item,title)>
+    <!ELEMENT channel (#PCDATA)>
+    <!ELEMENT item (#PCDATA)>
+    <!ELEMENT title (#PCDATA)>
+]>
+
+<rss>
+  <channel>
+        <item>
+          <title>&lol;</title>
+        </item>
+  </channel>
+</rss>
