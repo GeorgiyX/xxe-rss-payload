@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Pipedream - Latest topics</title>
+    <link>https://pipedream.com/community/latest</link>
+    <description>Latest topics</description>
+
+      <lastBuildDate>Tue, 01 Mar 2022 16:37:51 +0000</lastBuildDate>
+      <atom:link href="https://pipedream.com/community/latest.rss" rel="self" type="application/rss+xml" />
+        <item>
+          <title>Workflows: getting unknown error when making a request to HubSpot API. &quot;at null.search (file:///tmp/ee/c_N2fM6el/index.mjs:292:9)&quot;</title>
+          <dc:creator>test creator</dc:creator>
+          <category>Dev</category>
+          <description>test description</description>
+          <link>https://pipedream.com/community/t/workflows-getting-unknown-error-when-making-a-request-to-hubspot-api-at-null-search-file-tmp-ee-c-n2fm6el-index-mjs9/2003</link>
+          <pubDate>Tue, 01 Mar 2022 16:37:51 +0000</pubDate>
+          <discourse:topicPinned>No</discourse:topicPinned>
+          <discourse:topicClosed>No</discourse:topicClosed>
+          <discourse:topicArchived>No</discourse:topicArchived>
+          <guid isPermaLink="false">pipedream.com-topic-2003</guid>
+          <source url="https://pipedream.com/community/t/workflows-getting-unknown-error-when-making-a-request-to-hubspot-api-at-null-search-file-tmp-ee-c-n2fm6el-index-mjs9/2003.rss">Workflows: getting unknown error when making a request to HubSpot API. &quot;at null.search (file:///tmp/ee/c_N2fM6el/index.mjs:292:9)&quot;</source>
+        </item>
+        <item>
+  </channel>
+</rss>
