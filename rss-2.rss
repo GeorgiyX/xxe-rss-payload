@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE name [ <!ENTITY lol “ZeroNights”>]>
 <rss version="2.0" xmlns:discourse="http://www.discourse.org/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-
         <item>
-          <title>Тут будет прекол</title>
-          <dc:creator>test creator</dc:creator>
+          <title>&lol;</title>
         </item>
   </channel>
 </rss>
